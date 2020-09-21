@@ -1,0 +1,25 @@
+<root versionMajor="1" versionMinor="5">
+    <kernel name="krnl_rtl" language="ip" vlnv="xilinx.com:hls:krnl_rtl:1.0" attributes="" hash="" preferredWorkGroupSizeMultiple="0" workGroupSize="1" debug="false" compileOptions="" profileType="none" hwControlProtocol="ap_ctrl_chain" interrupt="true">
+        <ports>
+            <port name="m00_axi_gmem" portType="addressable" mode="master" base="0x0" range="0xFFFFFFFF" dataWidth="512"/>
+            <port name="m01_axi_gmem" portType="addressable" mode="master" base="0x0" range="0xFFFFFFFF" dataWidth="512"/>
+            <port name="m02_axi_gmem" portType="addressable" mode="master" base="0x0" range="0xFFFFFFFF" dataWidth="512"/>
+            <port name="m03_axi_gmem" portType="addressable" mode="master" base="0x0" range="0xFFFFFFFF" dataWidth="512"/>
+            <port name="m04_axi_gmem" portType="addressable" mode="master" base="0x0" range="0xFFFFFFFF" dataWidth="512"/>
+            <port name="m05_axi_gmem" portType="addressable" mode="master" base="0x0" range="0xFFFFFFFF" dataWidth="512"/>
+            <port name="s_axi_control" portType="addressable" mode="slave" base="0x0" range="0x1000" dataWidth="32"/>
+        </ports>
+        <args>
+            <arg id="0" name="a" addressQualifier="1" port="m00_axi_gmem" hostOffset="0x0" hostSize="0x8" offset="0x10" size="0x8" type="void*"/>
+            <arg id="1" name="b" addressQualifier="1" port="m01_axi_gmem" hostOffset="0x0" hostSize="0x8" offset="0x20" size="0x8" type="void*"/>
+            <arg id="2" name="c" addressQualifier="1" port="m02_axi_gmem" hostOffset="0x0" hostSize="0x8" offset="0x30" size="0x8" type="void*"/>
+            <arg id="3" name="d" addressQualifier="1" port="m03_axi_gmem" hostOffset="0x0" hostSize="0x8" offset="0x40" size="0x8" type="void*"/>
+            <arg id="4" name="e" addressQualifier="1" port="m04_axi_gmem" hostOffset="0x0" hostSize="0x8" offset="0x50" size="0x8" type="void*"/>
+            <arg id="5" name="f" addressQualifier="1" port="m05_axi_gmem" hostOffset="0x0" hostSize="0x8" offset="0x60" size="0x8" type="void*"/>
+            <arg id="3" name="length" addressQualifier="0" port="s_axi_control" hostOffset="0x0" hostSize="0x4" offset="0x34" size="0x4" type="unsigned int"/>
+        </args>
+        <compileWorkGroupSize x="1" y="1" z="1"/>
+        <maxWorkGroupSize x="1" y="1" z="1"/>
+    </kernel>
+</root>
+

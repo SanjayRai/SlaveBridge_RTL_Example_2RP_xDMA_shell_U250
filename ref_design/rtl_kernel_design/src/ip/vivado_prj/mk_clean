@@ -1,0 +1,6 @@
+rm -rf project_X
+rm min_area_pfile.tmp 
+rm -rf ip_pkg/*
+rm *.jou
+rm *.log
+rm -rf .Xil/
